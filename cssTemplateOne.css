@@ -1,0 +1,203 @@
+/*Base*/
+
+* {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /*border: 1px solid #F00;*/
+}
+
+html {
+    clear:both;
+}
+
+body {
+
+	/*Add ligatures to font style*/
+	
+    font-feature-settings: "kern", "liga";
+	-moz-font-feature-settings: "kern", "liga";
+	-moz-font-feature-settings: "kern=1", "liga=1";
+	-ms-font-feature-settings: "kern", "liga";
+	-o-font-feature-settings: "kern", "liga";
+	-webkit-font-feature-settings: "kern", "liga";
+}
+
+.element {
+    background-image: url('background2.svg');
+    background-color: #999;
+    background-size: 100px;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+   /* background-size: 4%;
+    height: 3em;*/
+}
+
+.app__div--container {
+	  width: 75%;
+      height: 160em;
+	  margin: 0 auto;
+      background-color: #ffffff;
+      z-index: 999;
+      padding: 1em;
+
+}
+
+.main__div--flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contentContainer {
+    width: 40%;
+    margin: 0 auto;
+}
+
+p,
+h1 {
+    color: #000000;
+}
+
+h1, figcaption {
+    text-align: center;
+}
+
+/*Header*/
+
+li {
+    display: inline-block;
+    width: 10em;
+    height: 1.51em;
+}
+
+span {
+    color: #50A6C2;
+}
+
+.heart,
+.location,
+.contact {
+    float: left;
+    width: 1.3em;
+    transition: fill .61s ease-out;
+}
+
+.heart:hover,
+.location:hover,
+.contact:hover {
+    fill: #50A6C2;
+}
+
+/*Body*/
+
+figcaption {
+    color: #F00;
+}
+
+#Layer_1 {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#redCorgi,
+#fawnCorgi,
+#sableCorgi,
+#blackAndTanCorgi {
+    width: 9em;
+    height: 9em;
+}
+
+.corgiPics {
+    height: 9em;
+    width: 9em;
+}
+
+.redCorgiRightEar,
+.redCorgiLeftEar,
+.redCorgiFace,
+.sableCorgiRightEyebrow,
+.sableCorgiLeftEyebrow,
+.blackAndTanCorgiRightEar,
+.blackAndTanCorgiLeftEar,
+.blackAndTanCorgiLeftEyebrow,
+.blackAndTanCorgiRightEyebrow {
+    fill: #BA8058;
+}
+
+.redCorgiJaws,
+.fawnCorgiJaws,
+.sableCorgiJaws,
+.blackAndTanCorgiJaws {
+    fill:#FBFEFF;
+}
+
+.redCorgiNose,
+.redCorgiLeftEye,
+.redCorgiRightEye,
+.fawnCorgiNose,
+.fawnCorgiLeftEye,
+.fawnCorgiRightEye,
+.sableCorgiRightEye,
+.sableCorgiLeftEye,
+.sableCorgiNose,
+.blackAndTanCorgiNose,
+.blackAndTanCorgiRightEye,
+.blackAndTanCorgiLeftEye {
+    fill:#2D3339;
+}
+
+.fawnCorgiLeftEar,
+.fawnCorgiRightEar,
+.fawnCorgiFace,
+.redCorgiRightEyebrow,
+.redCorgiLeftEyebrow  {
+    fill:#EAAA7F;
+}
+
+.fawnCorgiRightEyebrow,
+.fawnCorgiLeftEyebrow {
+    fill:#F4C6A6;
+}
+
+.sableCorgiRightEar,
+.sableCorgiLeftEar,
+.sableCorgiFace {
+    fill:#844B24;
+}
+
+.blackAndTanCorgiFace {
+    fill:#52595F;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px){
+    .app__div--container {
+        width: 95%;
+    }
+
+    .contentContainer {
+        width: 75%;
+    }
+}
+  
+@media screen and (max-width: 419px) {
+    .logoTitle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .alternativeLogo {
+        display: none;
+    }
+}
+  
+  
+  
