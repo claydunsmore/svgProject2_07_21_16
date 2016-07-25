@@ -32,8 +32,8 @@ p {
 
 h1,
 figcaption,
-.footerCredit,
-#Layer_1 {
+#Layer_1,
+.footer__p--footerCredit {
     text-align: center;
 }
 
@@ -41,22 +41,22 @@ h1, span {
     font-weight: 700;
 }
 
-.element,
+.app__body--background,
 .app__div--container,
 .main__div--flexContainer,
-.contentContainer,
+.main__div--contentContainer,
 #Layer_1 {
     margin: 0 auto;
 }
 
-.element,
-.nav__ul--flexContainer,
-.alternativeLogo,
+.app__body--background,
+.nav__ul--container,
+.main__h1--alternativeLogo,
 #Layer_1 {
     display: block;
 }
 
-.element {
+.app__body--background {
     background-image: url('backgroundThree.svg');
     background-color: #edeff0;
     background-size: 50px 50px;
@@ -65,15 +65,11 @@ h1, span {
 }
 
 .app__div--container {
-	  width: 75%;
+      width: 95%;
       height: auto;
       background-color: #ffffff;
       z-index: 999;
       padding: 1em;
-}
-
-.nav {
-    height: 5em;
 }
 
 .main__div--flexContainer {
@@ -83,14 +79,8 @@ h1, span {
     justify-content: center;
 }
 
-.alternativeLogo {
-    position: relative;
-    top: 3em;
-    margin: 2em auto;
-}
-
-.contentContainer {
-    width: 40%;
+.main__div--contentContainer {
+    width: 75%;
     padding: 3em 0 0 0;
 }
 
@@ -114,9 +104,9 @@ span:hover {
     color: #111;
 }
 
-.heart,
-.location,
-.contact {
+.nav__svg--heart,
+.nav__svg--location,
+.nav__svg--contact {
     float: left;
     width: 15px;
     height: 15px;
@@ -124,16 +114,16 @@ span:hover {
     fill: #39add1;
 }
 
-.heart:hover,
-.location:hover,
-.contact:hover {
+.nav__svg--heart:hover,
+.nav__svg--location:hover,
+.nav__svg--contact:hover {
     fill: #111;
 }
 
 /*Body*/
 
 figcaption,
-.footerCredit {
+.footer__p--footerCredit {
     color: #ba8058;
 }
 
@@ -141,12 +131,21 @@ footer {
     margin: 100px 0 0 0;
 }
 
+.main__h1--alternativeLogo {
+    position: relative;
+    top: 3em;
+    margin: 2em auto;
+}
 #Layer_1 {
     position: relative;
     top: 3em;
     height: 120px;
     width: 140px;
     clear: both;
+}
+
+.main__g--logoTitle {
+    display: none;
 }
 
 .corgiPics,
@@ -158,100 +157,98 @@ footer {
     height: 9em;
 }
 
-.redCorgiRightEar,
-.redCorgiLeftEar,
-.redCorgiFace,
-.sableCorgiRightEyebrow,
-.sableCorgiLeftEyebrow,
-.blackAndTanCorgiRightEar,
-.blackAndTanCorgiLeftEar,
-.blackAndTanCorgiLeftEyebrow,
-.blackAndTanCorgiRightEyebrow,
-.innerEllipseLogo {
+.main__path--redCorgiRightEar,
+.main__path--redCorgiLeftEar,
+.main__path--redCorgiFace,
+.main__path--sableCorgiRightEyebrow,
+.main__path--sableCorgiLeftEyebrow,
+.main__path--blackAndTanCorgiRightEar,
+.main__path--blackAndTanCorgiLeftEar,
+.main__path--blackAndTanCorgiLeftEyebrow,
+.main__path--blackAndTanCorgiRightEyebrow,
+.main__ellipse--innerEllipseLogo {
     fill: #BA8058;
 }
 
-.redCorgiJaws,
-.fawnCorgiJaws,
-.sableCorgiJaws,
-.blackAndTanCorgiJaws {
+.main__path--redCorgiJaws,
+.main__path--fawnCorgiJaws,
+.main__path--sableCorgiJaws,
+.main__path--blackAndTanCorgiJaws {
     fill:#FBFEFF;
 }
 
-.redCorgiNose,
-.redCorgiLeftEye,
-.redCorgiRightEye,
-.fawnCorgiNose,
-.fawnCorgiLeftEye,
-.fawnCorgiRightEye,
-.sableCorgiRightEye,
-.sableCorgiLeftEye,
-.sableCorgiNose,
-.blackAndTanCorgiNose,
-.blackAndTanCorgiRightEye,
-.blackAndTanCorgiLeftEye {
+.main__path--redCorgiNose,
+.main__path--redCorgiLeftEye,
+.main__path--redCorgiRightEye,
+.main__path--fawnCorgiNose,
+.main__path--fawnCorgiLeftEye,
+.main__path--fawnCorgiRightEye,
+.main__path--sableCorgiRightEye,
+.main__path--sableCorgiLeftEye,
+.main__path--sableCorgiNose,
+.main__path--blackAndTanCorgiNose,
+.main__path--blackAndTanCorgiRightEye,
+.main__path--blackAndTanCorgiLeftEye {
     fill:#2D3339;
 }
 
-.fawnCorgiLeftEar,
-.fawnCorgiRightEar,
-.fawnCorgiFace,
-.redCorgiRightEyebrow,
-.redCorgiLeftEyebrow,
-.p,
-.a,
-.w,
-.r,
-.i,
-.n,
-.t,
-.k,
-.e,
-.l,
-.s {
+.main__path--fawnCorgiLeftEar,
+.main__path--fawnCorgiRightEar,
+.main__path--fawnCorgiFace,
+.main__path--redCorgiRightEyebrow,
+.main__path--redCorgiLeftEyebrow,
+.main__path--p,
+.main__path--a,
+.main__path--w,
+.main__path--r,
+.main__path--i,
+.main__path--n,
+.main__path--t,
+.main__path--k,
+.main__path--e,
+.main__path--l,
+.main__path--s {
     fill:#EAAA7F;
 }
 
-.fawnCorgiRightEyebrow,
-.fawnCorgiLeftEyebrow,
-.middleToePad,
-.rightToePad,
-.leftToePad,
-.heelPad {
+.main__path--fawnCorgiRightEyebrow,
+.main__path--fawnCorgiLeftEyebrow,
+.main__path--middleToePad,
+.main__path--rightToePad,
+.main__path--leftToePad,
+.main__path--heelPad {
     fill:#F4C6A6;
 }
 
-.sableCorgiRightEar,
-.sableCorgiLeftEar,
-.sableCorgiFace {
+.main__path--sableCorgiRightEar,
+.main__path--sableCorgiLeftEar,
+.main__path--sableCorgiFace {
     fill:#844B24;
 }
 
-.blackAndTanCorgiFace {
+.main__path--blackAndTanCorgiFace {
     fill:#52595F;
 }
 
 /*Media Queries*/
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .app__div--container {
-        width: 95%;
-    }
-
-    .contentContainer {
         width: 75%;
     }
-}
-  
-@media screen and (max-width: 419px) {
-    .logoTitle {
-        display: none;
+
+    .main__div--contentContainer {
+        width: 40%;
     }
 }
 
 @media screen and (min-width: 420px) {
-    .alternativeLogo {
+    .main__h1--alternativeLogo {
         display: none;
+    }
+
+    .main__g--logoTitle {
+        display: block;
     }
 }
   
