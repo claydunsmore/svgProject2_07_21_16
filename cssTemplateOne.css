@@ -57,7 +57,7 @@ h1, span {
 }
 
 .app__body--background {
-    background-image: url('backgroundThree.svg');
+    background-image: url('svgs/backgroundThree.svg');
     background-color: #edeff0;
     background-size: 50px 50px;
     height: 100%;
