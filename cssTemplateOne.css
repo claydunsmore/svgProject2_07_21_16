@@ -1,17 +1,16 @@
 /*Base*/
 
 * {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  /*border: 1px solid #F00;*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ /*border: 1px solid #F00;*/
 }
-
-html {
-    clear:both;
-}
-
 body {
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
 	/*Add ligatures to font style*/
 	
     font-feature-settings: "kern", "liga";
@@ -22,100 +21,141 @@ body {
 	-webkit-font-feature-settings: "kern", "liga";
 }
 
-.element {
-    background-image: url('background2.svg');
-    background-color: #999;
-    background-size: 100px;
-    height: 90%;
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-   /* background-size: 4%;
-    height: 3em;*/
-}
-
-.app__div--container {
-	  width: 75%;
-      height: 160em;
-	  margin: 0 auto;
-      background-color: #ffffff;
-      z-index: 999;
-      padding: 1em;
-
-}
-
-.main__div--flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.contentContainer {
-    width: 40%;
-    margin: 0 auto;
-}
-
 p,
 h1 {
     color: #000000;
 }
 
-h1, figcaption {
+p {
+    line-height: 1.61em;
+}
+
+h1,
+figcaption,
+.footerCredit,
+#Layer_1 {
     text-align: center;
 }
+
+h1, span {
+    font-weight: 700;
+}
+
+.element,
+.app__div--container,
+.main__div--flexContainer,
+.contentContainer,
+#Layer_1 {
+    margin: 0 auto;
+}
+
+.element,
+.nav__ul--flexContainer,
+.alternativeLogo,
+#Layer_1 {
+    display: block;
+}
+
+.element {
+    background-image: url('backgroundThree.svg');
+    background-color: #edeff0;
+    background-size: 50px 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.app__div--container {
+	  width: 75%;
+      height: auto;
+      background-color: #ffffff;
+      z-index: 999;
+      padding: 1em;
+}
+
+.nav {
+    height: 5em;
+}
+
+.main__div--flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+.alternativeLogo {
+    position: relative;
+    top: 3em;
+    margin: 2em auto;
+}
+
+.contentContainer {
+    width: 40%;
+    padding: 3em 0 0 0;
+}
+
 
 /*Header*/
 
 li {
     display: inline-block;
-    width: 10em;
-    height: 1.51em;
+    width: 6em;
+    height: 1em;
+    float: left;
 }
 
 span {
-    color: #50A6C2;
+    color: #39add1;
+    margin: 0 0 0 .3em;
+    transition: color .61s ease-out;
+}
+
+span:hover {
+    color: #111;
 }
 
 .heart,
 .location,
 .contact {
     float: left;
-    width: 1.3em;
+    width: 15px;
+    height: 15px;
     transition: fill .61s ease-out;
+    fill: #39add1;
 }
 
 .heart:hover,
 .location:hover,
 .contact:hover {
-    fill: #50A6C2;
+    fill: #111;
 }
 
 /*Body*/
 
-figcaption {
-    color: #F00;
+figcaption,
+.footerCredit {
+    color: #ba8058;
+}
+
+footer {
+    margin: 100px 0 0 0;
 }
 
 #Layer_1 {
-    display: block;
-    width: 10%;
-    margin: 0 auto;
-    text-align: center;
+    position: relative;
+    top: 3em;
+    height: 120px;
+    width: 140px;
+    clear: both;
 }
 
+.corgiPics,
 #redCorgi,
 #fawnCorgi,
 #sableCorgi,
 #blackAndTanCorgi {
     width: 9em;
     height: 9em;
-}
-
-.corgiPics {
-    height: 9em;
-    width: 9em;
 }
 
 .redCorgiRightEar,
@@ -126,7 +166,8 @@ figcaption {
 .blackAndTanCorgiRightEar,
 .blackAndTanCorgiLeftEar,
 .blackAndTanCorgiLeftEyebrow,
-.blackAndTanCorgiRightEyebrow {
+.blackAndTanCorgiRightEyebrow,
+.innerEllipseLogo {
     fill: #BA8058;
 }
 
@@ -156,12 +197,27 @@ figcaption {
 .fawnCorgiRightEar,
 .fawnCorgiFace,
 .redCorgiRightEyebrow,
-.redCorgiLeftEyebrow  {
+.redCorgiLeftEyebrow,
+.p,
+.a,
+.w,
+.r,
+.i,
+.n,
+.t,
+.k,
+.e,
+.l,
+.s {
     fill:#EAAA7F;
 }
 
 .fawnCorgiRightEyebrow,
-.fawnCorgiLeftEyebrow {
+.fawnCorgiLeftEyebrow,
+.middleToePad,
+.rightToePad,
+.leftToePad,
+.heelPad {
     fill:#F4C6A6;
 }
 
